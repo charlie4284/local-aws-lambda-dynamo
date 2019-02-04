@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dynamoInstall.js && nodemon index.js",
-    "database": "java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb"
+    "database": "cd dynamodb-local && java -Djava.library.path=./dynamodb-local/DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb"
   },
   "author": "",
   "license": "ISC"
